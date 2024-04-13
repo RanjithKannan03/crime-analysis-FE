@@ -38,6 +38,13 @@ const Sidebar = () => {
                 >
                     <AiOutlineTable size={30} />
                 </NavLink>
+                <NavLink
+                    to="pdf"
+                    className={css.item}
+                    title="pdf"
+                >
+                    <AiFillCalendar size={30} />
+                </NavLink>
             </div>
         </div>
     )
