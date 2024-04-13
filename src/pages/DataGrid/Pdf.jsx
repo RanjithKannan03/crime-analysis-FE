@@ -19,7 +19,11 @@ const Pdf = () => {
         <div className="table-container">
             <ThemeProvider theme={theme}>
                     <input type="file" accept=".pdf"/>
+                   
             </ThemeProvider>
+            <div className='text-yellow-400'>
+                helo navane
+            </div>
         </div>
     )
 }
