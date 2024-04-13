@@ -10,6 +10,7 @@ const Pdf = () => {
   const [summary, setSummary] = useState("");
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [mostSimilarPdf, setMostSimilarPdf] = useState("");
 
   const theme = useMemo(() =>
     createTheme({
@@ -44,18 +45,48 @@ const Pdf = () => {
     }
   };
 
+  const handleCompare = async () => {
+    setLoading(true);
+
+    const formData = new FormData();
+    formData.append("file", data);
+
+    try {
+      const response = await axios.post("/compare_pdfs", formData, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      });
+      setMostSimilarPdf(response.data.most_similar_pdf);
+    } catch (error) {
+      setError(error.response.data.error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div className="table-container">
       <ThemeProvider theme={theme}>
         <div className="w-96 h-32 border border-dashed border-white flex flex-row items-center justify-center px-5">
-        <input type="file" accept=".pdf" onChange={handleFileChange} />
+          <input type="file" accept=".pdf" onChange={handleFileChange} />
         </div>
-       
+        <div className="space-x-10">
         <button onClick={handleSummarize} disabled={loading} className="mt-5">
           {loading ? "Loading..." : "Summarize PDF"}
         </button>
+        <button onClick={handleCompare} disabled={loading} className="mt-2">
+          {loading ? "Loading..." : "Compare PDF"}
+        </button>
+        </div>
+        
         {error && <div className="text-red-500">{error}</div>}
         {summary && <div className="summary">{summary}</div>}
+        {mostSimilarPdf && (
+          <div className="text-green-500">
+            Most similar PDF: {mostSimilarPdf}
+          </div>
+        )}
       </ThemeProvider>
     </div>
   );
