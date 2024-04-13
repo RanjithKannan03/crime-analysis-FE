@@ -45,6 +45,13 @@ const Sidebar = () => {
                 >
                     <AiFillCalendar size={30} />
                 </NavLink>
+                <NavLink
+                    to="image"
+                    className={css.item}
+                    title="Generate Image"
+                >
+                    <AiFillCalendar size={30} />
+                </NavLink>
             </div>
         </div>
     )

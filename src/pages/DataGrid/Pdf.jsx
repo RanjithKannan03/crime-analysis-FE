@@ -32,7 +32,7 @@ const Pdf = () => {
     formData.append("file", data);
 
     try {
-      const response = await axios.post("/summarize_pdf", formData, {
+      const response = await axios.post("http://127.0.0.1:5000/summarize_pdf", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
@@ -52,7 +52,7 @@ const Pdf = () => {
     formData.append("file", data);
 
     try {
-      const response = await axios.post("/compare_pdfs", formData, {
+      const response = await axios.post("http://127.0.0.1:5000/compare_pdfs", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },

@@ -5,6 +5,7 @@ import Calendar from './pages/Calendar/Calendar';
 import Dashboard from './pages/Dashboard/Dashboard';
 import DataGrid from './pages/DataGrid/DataGrid';
 import Pdf from './pages/DataGrid/Pdf';
+import ImageGen from './pages/DataGrid/ImageGen';
 
 
 const App = () => {
@@ -18,7 +19,7 @@ const App = () => {
           <Route path="board" element={<BoardPage/>}/>
           <Route path="users" element={<DataGrid/>}/>
           <Route path="pdf" element={<Pdf/>}/>
-          
+          <Route path='image' element={<ImageGen/>}/>
         </Route>
 
       </Routes>
