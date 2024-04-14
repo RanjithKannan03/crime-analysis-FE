@@ -33,24 +33,24 @@ const CrimePredictionForm = () => {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} class="flex flex-col space-y-5 ml-10">
         <label>
           Location:
-          <input type="text" name="Location" value={formData.Location} onChange={handleChange} />
+          <input type="text" name="Location" value={formData.Location} onChange={handleChange} className="text-black rounded-sm ml-5"/>
         </label>
         <label>
           Time of Day:
-          <input type="text" name="Time_of_Day" value={formData.Time_of_Day} onChange={handleChange} />
+          <input type="text" name="Time_of_Day" value={formData.Time_of_Day} onChange={handleChange} className="text-black rounded-sm ml-5" />
         </label>
         <label>
           Weather:
-          <input type="text" name="Weather" value={formData.Weather} onChange={handleChange} />
+          <input type="text" name="Weather" value={formData.Weather} onChange={handleChange} className="text-black rounded-sm ml-5"/>
         </label>
         <label>
           Demographics:
-          <input type="text" name="Demographics" value={formData.Demographics} onChange={handleChange} />
+          <input type="text" name="Demographics" value={formData.Demographics} onChange={handleChange}className="text-black rounded-sm ml-5"/>
         </label>
-        <button type="submit">Predict Crime</button>
+        <button type="submit" className="border border-white w-32">Predict Crime</button>
       </form>
       {responsePlan && (
         <div>
