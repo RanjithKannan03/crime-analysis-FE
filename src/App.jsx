@@ -7,6 +7,7 @@ import DataGrid from './pages/DataGrid/DataGrid';
 import Pdf from './pages/DataGrid/Pdf';
 import ImageGen from './pages/DataGrid/ImageGen';
 import Chat from './pages/DataGrid/Chat';
+import Planner from './pages/DataGrid/Planner';
 
 
 const App = () => {
@@ -22,6 +23,8 @@ const App = () => {
           <Route path="pdf" element={<Pdf/>}/>
           <Route path='image' element={<ImageGen/>}/>
           <Route path='chat' element={<Chat/>}/>
+          <Route path='Planner' element={<Planner/>}/>
+
         </Route>
 
       </Routes>
