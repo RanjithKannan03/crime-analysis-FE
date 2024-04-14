@@ -6,6 +6,7 @@ import Dashboard from './pages/Dashboard/Dashboard';
 import DataGrid from './pages/DataGrid/DataGrid';
 import Pdf from './pages/DataGrid/Pdf';
 import ImageGen from './pages/DataGrid/ImageGen';
+import Chat from './pages/DataGrid/Chat';
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="users" element={<DataGrid/>}/>
           <Route path="pdf" element={<Pdf/>}/>
           <Route path='image' element={<ImageGen/>}/>
+          <Route path='chat' element={<Chat/>}/>
         </Route>
 
       </Routes>

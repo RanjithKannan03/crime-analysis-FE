@@ -52,6 +52,13 @@ const Sidebar = () => {
                 >
                     <AiFillCalendar size={30} />
                 </NavLink>
+                <NavLink
+                    to="chat"
+                    className={css.item}
+                    title="Chat"
+                >
+                    <AiFillCalendar size={30} />
+                </NavLink>
             </div>
         </div>
     )
