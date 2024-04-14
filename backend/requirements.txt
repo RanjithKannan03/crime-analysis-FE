@@ -1,0 +1,17 @@
+ tf-keras
+Flask
+PyPDF2
+keras==2.15.0
+requests
+transformers
+google
+textblob
+beautifulsoup4
+openai
+pandas
+scikit-learn
+scipy==1.12.0
+gensim==4.3.2
+numpy
+tensorflow
+

@@ -66,7 +66,7 @@ const Chat = () => {
         })
         const result=response.data;
         setMessages((prev)=>{
-            return [...prev,{form:"bot",messages:result.answer}]
+            return [...prev,{from:"bot",message:result.answer}]
         })
     }
     catch{

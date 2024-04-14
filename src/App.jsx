@@ -23,7 +23,7 @@ const App = () => {
           <Route path="pdf" element={<Pdf/>}/>
           <Route path='image' element={<ImageGen/>}/>
           <Route path='chat' element={<Chat/>}/>
-          <Route path='Planner' element={<Planner/>}/>
+          <Route path='plan' element={<Planner/>}/>
 
         </Route>
 
