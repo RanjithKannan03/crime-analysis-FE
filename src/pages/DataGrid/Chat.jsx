@@ -70,7 +70,7 @@ const Chat = () => {
         })
     }
     catch(e){
-        console.log(e);
+        console.log(e.response.data);
     }
   }
 
