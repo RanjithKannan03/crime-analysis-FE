@@ -65,33 +65,33 @@ let todayStr = moment().format("YYYY-MM-DD")  // YYYY-MM-DD of today
 export const INITIAL_EVENTS = [
   {
     id: createEventId(),
-    title: 'Lunch Pary',
+    title: 'CM meet',
     start: todayStr + 'T09:00:00',
 
   },
   {
     id: createEventId(),
-    title: 'Timed event',
+    title: 'PM escort',
     start: moment(todayStr).add(1, "days").format("YYYY-MM-DD") + 'T16:00:00'
   },
   {
     id: createEventId(),
-    title: "Head Meetup",
+    title: "Head meetup",
     start: moment(todayStr).add(2, "days").format("YYYY-MM-DD") + 'T20:00:00'
   },
   {
     id: createEventId(),
-    title: "VC Meeting",
+    title: "Cyber wing meet",
     start: moment(todayStr).add(3, "days").format("YYYY-MM-DD") + 'T09:00:00'
   },
   {
     id: createEventId(),
-    title: "Payment Shedules",
+    title: "Citizen connect",
     start: moment(todayStr).add(5, "days").format("YYYY-MM-DD") + 'T13:00:00'
   },
   {
     id: createEventId(),
-    title: "VC Meeting",
+    title: "Awareness rally ",
     start: moment(todayStr).add(6, "days").format("YYYY-MM-DD") + 'T13:00:00'
   },
 ]
@@ -110,13 +110,13 @@ export const boardData = {
       cards: [
         {
           id: 1,
-          title: "Database Setup",
-          description: "Firebase Integration"
+          title: "Assault in Koramangala",
+          description: "Occurred at night, clear weather, high population density"
         },
         {
           id: 2,
-          title: "Data Flow",
-          description: "Setup Diagram with other developers"
+          title: "Burglary in Downtown",
+          description: "Occurred during the day, cloudy weather, moderate population density"
         },
       ]
     },
@@ -126,8 +126,8 @@ export const boardData = {
       cards: [
         {
           id: 9,
-          title: "Data Table Page",
-          description: "Server side Pagination",
+          title: "Robbery in Suburbia",
+          description: "Undergoing investigation, night time, rainy weather, low population density",
         }
       ]
     },
@@ -137,13 +137,13 @@ export const boardData = {
       cards: [
         {
           id: 10,
-          title: "Full Calendar Extension",
-          description: "Make new events and store in global states"
+          title: "Fraud Scheme",
+          description: "Legal proceedings underway, occurred during daytime, clear weather, high population density"
         },
         {
           id: 11,
-          title: "Custom Kanban Board",
-          description: "Setup react-kanban dep within Dashboard as seperate page"
+          title: "Drug Trafficking",
+          description: "Case being built, occurred at night, foggy weather, moderate population density"
         }
       ]
     },
@@ -153,13 +153,14 @@ export const boardData = {
       cards: [
         {
           id: 12,
-          title: "Vite Server Setup",
-          description: "Configure required modules and starters"
+          title: "Vandalism Incident",
+          description: "Case closed, occurred during daytime, clear weather, low population density"
         },
+
         {
           id: 13,
-          title: "Modular structre",
-          description: "Write css in form of modules to reduce the naming conflicts"
+          title: "Shoplifting Arrest",
+          description: "Perpetrator apprehended, occurred at night, rainy weather, high population density"
         }
       ]
     }
@@ -248,5 +249,5 @@ export const userData = [
     address: '32188 Larkin Turnpike',
     city: 'Charleston',
     state: 'South Carolina',
-  },
+  },
 ]
