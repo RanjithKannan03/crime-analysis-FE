@@ -33,7 +33,7 @@ const Chat = () => {
     };
     formData.append('data',JSON.stringify(data));
     try{
-        const result=await Axios.post('http://127.0.0.1:5000/set_data',formData,{
+        const result=await Axios.post('https://ksp-chat-cef919796c2f.herokuapp.com/',formData,{
             headers:{
                 "Content-Type": "application/json",
             }

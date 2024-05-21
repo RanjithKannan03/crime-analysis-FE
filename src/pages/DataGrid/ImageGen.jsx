@@ -25,7 +25,7 @@ const Pdf = () => {
     formData.append("prompt", prompt);
     try {
       const response = await Axios.post(
-        "http://127.0.0.1:5000/generate_image",
+        "https://ksp-image-gen-4968f595cb74.herokuapp.com/",
         formData,
         {
           headers: {
