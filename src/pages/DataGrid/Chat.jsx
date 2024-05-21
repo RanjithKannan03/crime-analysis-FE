@@ -69,7 +69,7 @@ const Chat = () => {
             return [...prev,{from:"bot",message:result.answer}]
         })
     }
-    catch{
+    catch(e){
         console.log(e);
     }
   }
