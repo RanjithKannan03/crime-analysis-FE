@@ -52,7 +52,7 @@ const Pdf = () => {
     formData.append("file", data);
 
     try {
-      const response = await axios.post("http://127.0.0.1:5000/compare_pdfs", formData, {
+      const response = await axios.post("https://ksp-compare-pdf-0a977fdfdd1e.herokuapp.com/compare_pdfs", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
