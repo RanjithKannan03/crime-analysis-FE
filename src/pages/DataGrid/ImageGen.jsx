@@ -38,6 +38,7 @@ const Pdf = () => {
       setIsLoading(false);
     } catch (e) {
       console.log(e);
+     
     }
   }
 
