@@ -33,7 +33,7 @@ const Chat = () => {
     };
     formData.append('data',JSON.stringify(data));
     try{
-        const result=await Axios.post('https://ksp-chat-cef919796c2f.herokuapp.com/',formData,{
+        const result=await Axios.post('https://ksp-chat-cef919796c2f.herokuapp.com/set_data',formData,{
             headers:{
                 "Content-Type": "application/json",
             }
@@ -59,7 +59,7 @@ const Chat = () => {
     const formData=new FormData();
     formData.append('question',newMessage);
     try{
-        const response= await Axios.post('http://127.0.0.1:5000/ask_question',formData,{
+        const response= await Axios.post('https://ksp-chat-cef919796c2f.herokuapp.com/ask_question',formData,{
             headers:{
                 "Content-Type": "application/json",
             }
